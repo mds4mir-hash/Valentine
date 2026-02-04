@@ -55,8 +55,26 @@
 
 <script>
   function yesClicked() {
-    alert("Yay! I love you ❤️🥰");
-  }
+  document.body.innerHTML = `
+    <div style="
+      background:#ffd6e8;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      font-family:Arial, sans-serif;
+      text-align:center;
+    ">
+      <h1>YAYYY 😍💖</h1>
+      <p>You said YES 🥹</p>
+      <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif"
+           style="width:260px;border-radius:20px;">
+      <p>I’m so happy ❤️</p>
+    </div>
+  `;
+}
+
 
   function moveNo() {
     const noBtn = document.getElementById("no");
